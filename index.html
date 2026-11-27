@@ -13,14 +13,14 @@
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Ir al contenido</a>
+  <a class="skip-link" href="#main-content" data-i18n="skipContent">Ir al contenido</a>
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="#inicio" aria-label="Danubio Geoscientia, inicio">
         <span class="brand-mark" aria-hidden="true">DG</span>
         <span><strong>DANUBIO</strong><small>GEOSCIENTIA</small></span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Menú</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only" data-i18n="menuLabel">Menú</span></button>
       <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
         <a href="#inicio" data-i18n="navHome">Inicio</a>
         <a href="#nosotros" data-i18n="navAbout">Nosotros</a>
@@ -31,7 +31,7 @@
         <a href="#contacto" data-i18n="navContact">Contacto</a>
       </nav>
       <button id="language-toggle" class="language-toggle" type="button" aria-label="Cambiar a inglés">EN</button>
-    </header>
+    </div>
   </header>
 
   <main id="main-content">
@@ -121,15 +121,23 @@
 
     <section id="equipo" class="section team-section">
       <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="teamEyebrow">Equipo profesional</p>
-        <h2 data-i18n="teamTitle">Expertise preparado para incorporar perfiles especialistas</h2>
+        <h2 data-i18n="teamTitle">Equipo profesional</h2>
       </div>
-      <div id="team-grid" class="team-grid reveal">
-        <article class="team-placeholder">
-          <div class="profile-avatar" aria-hidden="true"></div>
-          <p class="placeholder-label" data-i18n="teamPlaceholder">Perfil profesional disponible para incorporación</p>
+      <div id="team-grid" class="team-grid"></div>
+      <template id="team-card">
+        <article class="service-card team-card">
+          <div class="profile-portrait team-portrait">
+            <span aria-hidden="true"></span>
+          </div>
+          <div class="team-card-copy">
+            <h3></h3>
+            <p class="team-role"></p>
+            <p class="service-summary"></p>
+            <ul class="profile-tags" role="list"></ul>
+            <a class="button button-primary team-link"></a>
+          </div>
         </article>
-      </div>
+      </template>
     </section>
 
     <section id="contacto" class="section contact-section">

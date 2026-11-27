@@ -1,5 +1,18 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Tarjeta bilingüe de Cristian Denis Basic Noguera en el equipo profesional y páginas individuales en español e inglés.
+- Formación, trayectoria, especialidades, investigación, herramientas y propuesta de valor, con enlaces al catálogo y al contacto comercial de Danubio.
+- Fotografía configurable en el campo `photo` de `data/team.json`, con iniciales CB de respaldo. El campo `linkedin` habilita el enlace al completarse con la URL validada.
+
+### Changed
+
+- La navegación entre el perfil, el equipo y los servicios conserva el idioma elegido.
+- Los servicios especializados tienen enlaces directos compatibles con GitHub Pages.
+
 ## [0.1.0] - 2026-11-26
 ### Added
 - Primera implementación navegable de Danubio Geoscientia.

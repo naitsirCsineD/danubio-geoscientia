@@ -1,3 +1,35 @@
 {
-  "profiles": []
+  "profiles": [
+    {
+      "id": "cristian-basic",
+      "name": "Cristian Denis Basic Noguera",
+      "initials": "CB",
+      "role": {
+        "es": "Ingeniero de Minas | Especialista en Recursos Minerales, Geoestadística e Inteligencia Artificial.",
+        "en": "Mining Engineer | Mineral Resource Estimation, Geostatistics and Artificial Intelligence Specialist."
+      },
+      "summary": {
+        "es": "Ingeniero de minas con más de una década de experiencia en estimación de recursos minerales, geoestadística y desarrollo de soluciones tecnológicas para la minería.",
+        "en": "Mining engineer with more than a decade of experience in mineral resource estimation, geostatistics, and developing technology solutions for mining."
+      },
+      "specialties": {
+        "es": [
+          "Estimación de recursos minerales",
+          "Geoestadística",
+          "Inteligencia artificial aplicada a minería"
+        ],
+        "en": [
+          "Mineral resource estimation",
+          "Geostatistics",
+          "AI for mining"
+        ]
+      },
+      "page": {
+        "es": "equipo/cristian-basic.html",
+        "en": "equipo/cristian-basic.en.html"
+      },
+      "photo": "assets/team/cristian-basic.webp",
+      "linkedin": ""
+    }
+  ]
 }
